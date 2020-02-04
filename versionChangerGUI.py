@@ -1,7 +1,6 @@
 import shutil
 import pathlib
 import tkinter as tk
-from tkinter import filedialog as fd
 from tkinter import ttk
 
 
@@ -20,12 +19,12 @@ class Application:
         print("Game switched to Everest version")
 
     def __init__(self, root):
-        root.geometry("700x300")
+        root.geometry("400x100")
         root.title("Celeste version changer")
 
-        ttk.Label(text="What game version do you want to play?").grid(row=0,column=0,columnspan=2)
-        ttk.Button(command=self.changeToOrginal, text="Orginal Celeste", width=15).grid(row=1,column=1,padx=5,pady=5)
-        ttk.Button(command=self.changeToEverest, text="Everest Celeste", width=15).grid(row=1,column=2,padx=5,pady=5)
+        ttk.Label(text="What game version do you want to play?").grid(row=0,column=0,columnspan=2,padx=10,pady=15)
+        ttk.Button(command=self.changeToOrginal, text="Orginal Celeste", width=15).grid(row=1,column=0,padx=5,pady=5)
+        ttk.Button(command=self.changeToEverest, text="Everest Celeste", width=15).grid(row=1,column=1,padx=5,pady=5)
 
 
 # Main #
